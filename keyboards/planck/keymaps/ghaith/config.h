@@ -45,3 +45,8 @@
 If you press a Mod Tap key, tap another key (press and release) and then release the Mod Tap key, all within the tapping term, it will output the tapping function for both keys.
  */
 #define PERMISSIVE_HOLD
+
+/*
+Similar to Permissive Hold, this alters how the firmware processes inputs for fast typists. If you press a Mod Tap key, press another key, release the Mod Tap key, and then release the normal key, it would normally output the Mod plus the normal key, even if pressed within the TAPPING_TERM. This may not be desirable for rolling combo keys, or for fast typists who have a Mod Tap on a frequently used key (RCTL_T(KC_QUOT), for example).
+*/
+#define IGNORE_MOD_TAP_INTERRUPT
