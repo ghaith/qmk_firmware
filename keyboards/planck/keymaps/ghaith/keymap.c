@@ -45,6 +45,8 @@ enum planck_keycodes {
 #define TO_LOWER TO(_LOWER)
 #define TO_RAISE TO(_RAISE)
 #define TO_NUMBERS TO(_NUMBERS)
+#define TO_COLEMAK TO(_COLEMAK)
+#define TO_FCOLEMAK TO(_FCOLEMAK)
 #define LAYERS OSL(_LAYERS)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -222,8 +224,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LAYERS] = LAYOUT_planck_grid(
     _______, _______,   _______,   _______, _______, _______, _______, _______, _______,  _______, _______, _______ ,
     _______, _______, _______,  _______,   _______,  _______, _______, _______,  _______,  _______,  _______,  _______,
-    TO(_FCOLEMAK), _______,  _______,  _______,   _______,  _______,   _______,  _______, _______, _______, _______, _______,
-    TO(_COLEMAK), TO_NUMBERS, _______, _______, TO_LOWER, TO_RAISE, _______, _______, _______,  _______, _______, _______
+    TO_FCOLEMAK, _______,  _______,  _______,   _______,  _______,   _______,  _______, _______, _______, _______, _______,
+    TO_COLEMAK, TO_NUMBERS, _______, _______, TO_LOWER, TO_RAISE, _______, _______, _______,  _______, _______, _______
 )
 
 };
